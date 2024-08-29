@@ -8,7 +8,9 @@
 
     <style>
         h1 { 
-            font-size: 30px; text-align: center;color: rgb(0, 0, 0); 
+            font-size: 30px; 
+            text-align: center;
+            color: rgb(0, 0, 0); 
         }
         header {
             background-color: rgb(255, 255, 255);
@@ -39,6 +41,9 @@
             text-decoration: none;
             color: black;
         }
+        nav a:hover {
+            color: white;
+        }
 
         nav form {
             flex: 1;
@@ -46,15 +51,106 @@
             align-items: center;
             height: 100%;
             width: 500px;
+            border: none;
         }
         footer{
             background-color: #d9d7ef;
             height: 27px;
         }
+        .banner img {
+            margin-left: 200px;
+            margin-right: 200px;
+        }
+        h2{
+            text-decoration: solid;
+            font-size: 30px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #544e97;
+
+        }
+        .produtos{
+            margin-left: 10px;
+            margin-right: 10px;
+            clear: both;
+            display: table;
+            width: 100%;
+	        height: 100%;
+            overflow: hidden;
+        }
+        .produtos img {
+            width: 60%;
+            transition: transform 0.5s ease;
+            margin-left: 60px;
+            margin-right: 40px;
+        }
+        .produtos:hover img {
+            transform: scale(1.2);
+        }
+        .coluna{
+            float: left;
+            width: 24.4%;
+            border: #d9d7ef solid 0.5px;
+            margin-bottom: 50px;
+            
+        }
+        html, body {
+	    width: 100%;
+	    height: 100%;
+	    margin: 0;	
+        }
+        .carrosel {
+            margin-left: 100px;
+            margin-right: 100px;
+            margin-top: 50px;
+            clear: both;
+            display: table;
+            width: 100%;
+	        height: 100%;
+        }
+        .ncoluna {
+            float: left;
+            width: 33.33%;
+            margin-bottom: 50px;
+            border-radius: 100px;
+        }
+        .ncoluna img {
+            border-radius: 20px;
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        p{
+            font-size: 20px;
+            color: #544e97;
+            margin-left: 0px;
+            margin-right: 10px;
+        }
+        h3{
+            margin-left: 15px;
+            font-size: 14px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .aviso{
+            background-color: #544e97;
+            height: 100px;
+            width: 100%;
+        }
+        .aviso p {
+            color: white;
+            text-align: center;
+            margin-bottom: 5px;
+            margin-top: 0px;
+        }
+        h4{
+            color: white;
+            text-align: center;
+            font-size: 30px;
+            
+        }
+
     </style>
 
 </head>
 <body>
+<div class="site">
     <div>
         <header>
             <h1>Yupi</h1>
@@ -67,6 +163,7 @@
         <li><a href="#">Colares</a></li>
         <li><a href="#">Pulseiras</a></li>
         <li><a href="#">Anéis</a></li>
+        <li><a href="#">Relógios</a></li>
         </ul>
     
         <form>
@@ -76,14 +173,64 @@
             </nav>
             
         <main>
-            <div>
-                <img src="" alt="">
+
+            <center><h2>NOSSOS PRODUTOS</h2></center>
+
+            <div class="produtos">
+            <div class="coluna">
+                <img src="imagens/categorias-institucional-24-10-ANEL.png" alt="">
+            </div>
+
+            <div class="coluna">
+                <img src="imagens/categorias-institucional-24-10-BRINCO.png" alt="">
+            </div>
+
+            <div class="coluna">
+                <img src="imagens/categorias-institucional-24-10-COLAR.png" alt="">
+            </div>
+
+            <div class="coluna">
+                <img src="imagens/categorias-institucional-24-10-PULSEIRA.png" alt="">
+            </div>
+
+            </div>
+
+
+
+
+
+            <div class="banner">
+                <center><img src="imagens/08_08_BANNER_SAZONAL_1040x230_DIVERTIDAMENTE_SaibaMais.png" alt=""></center>
+            </div>
+
+            <div class="carrosel">
+                <div class="ncoluna">
+                    <img src="imagens/330x420_DESKTOP_E_MOBILE_TRIO02_BANNER_01.png" alt="">
+                    <p>Pingente personalizado</p>
+                </div>
+
+                <div class="ncoluna">
+                    <img src="imagens/330x420_DESKTOP_E_MOBILE_TRIO02_BANNER_02.png" alt="">
+                    <p>Estilo único</p>
+                </div>
+
+                <div class="ncoluna">
+                    <img src="imagens/330x420_DESKTOP_E_MOBILE_TRIO02_BANNER_03.png" alt="">
+                    <p>Prata 925 maciça</p>
+                </div>
+            </div>
+
+
+            <div class="aviso">
+                <h4>Ganhe 01 brinde</h4>
+                <p>Na sua primeira compra</p>
             </div>
         </main>
 
 
         <footer>
-            <p>©Copyright 2024. Todos direitos reservados para Vitória Xavier.</p>
+            <h3>©Copyright 2024. Todos direitos reservados para Vitória Xavier.</h3>
         </footer>
+</div>
 </body>
 </html>
